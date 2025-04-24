@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu App Simples</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f2f2f2;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo ao meu app!</h1>
+  <p>Este é um aplicativo simples feito sem banco de dados.</p>
+
+  <button onclick="mostrarMensagem()">Clique aqui</button>
+  <button onclick="tocarAudio()">Tocar Som</button>
+
+  <p id="mensagem" style="margin-top: 20px; font-weight: bold;"></p>
+
+  <audio id="som" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').innerText = "Você clicou no botão!";
+    }
+
+    function tocarAudio() {
+      document.getElementById('som').play();
+    }
+  </script>
+</body>
+</html>
